@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Jhonata",
+        "email": "jhonata.sobrinho@hotmail.com"
+    },
+    {
+        "id": 2,
+        "name": "UFSCar",
+        "email": "contato@ufscar.edu.br"
+    },
+    {
+        "id": 3,
+        "name": "John",
+        "phone": "+5514999998888"
+    }
+]

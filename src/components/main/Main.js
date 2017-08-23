@@ -52,7 +52,7 @@ class Main extends Component {
                                 <input className="form-control"
                                        name={this.isPhoneSelected() ? 'phone' : 'email'}
                                        placeholder={this.isPhoneSelected() ? 'Phone' : 'Email'}
-                                       type="text"
+                                       type={this.isPhoneSelected() ? 'text' : 'email'}
                                        autofocus
                                        required
                                 />

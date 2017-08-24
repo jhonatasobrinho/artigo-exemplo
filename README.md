@@ -19,7 +19,7 @@ As duas branches disponíveis - **master e clean** - são os dois modelos utiliz
 
 Para fazer o download do código de cada branch é só executar o seguinte comando:
 
-`npm checkout <nome da branch>`
+`git checkout <nome da branch>`
 
 As duas branches não tem diferenças na interface, apenas no código.
 Como o propósito do estudo é mostrar técnicas de programação e padrões de projeto que facilitem manutenção e leitura do código, o código que está na branch **master** foi refatorado e commitado na branch **clean**.

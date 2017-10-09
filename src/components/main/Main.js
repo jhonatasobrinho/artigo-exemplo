@@ -93,8 +93,8 @@ class Main extends Component {
                     </ul>
                 </div>
             </div>
-    )
+        )
     }
-    }
+}
 
-    export default Main;
+export default Main;

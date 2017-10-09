@@ -19,11 +19,13 @@ class App extends Component {
 
     onAdicionarContato(e) {
         const optValue = e.target.optradio.value;
+        const name = e.target.nome.value;
 
         const contato = {
             id: Math.max.apply(Math, this.state.contatos.map((c) => c.id)) + 1,
-            name: e.target.nome.value,
-            [optValue]: e.target[optValue].value
+            name,
+            [optValue]: e.target[optValue].value,
+            insertDate: new Date()
         };
 
         let contatos = this.state.contatos;

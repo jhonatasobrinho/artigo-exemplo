@@ -1,8 +1,8 @@
 # Modelo 1 - Simples
 
-Para criar a branch do modelo simples, utilize:
+Para entrar na branch do modelo simples, se ainda não estiver, utilize:
 
-`git checkout -b simples`
+`git checkout simples`
 
 Para atualizar o código na branch, utilize
 

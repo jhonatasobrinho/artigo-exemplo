@@ -1,8 +1,8 @@
 # Modelo 2 - Clean
 
-Para criar a branch do modelo clean, utilize:
+Para entrar na branch do modelo clean, utilize:
 
-`git checkout -b clean`
+`git checkout clean`
 
 Para atualizar o código na branch, utilize
 

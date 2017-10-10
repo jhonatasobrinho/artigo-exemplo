@@ -1,12 +1,8 @@
 # Aplicação exemplo para artigo
 
-Para completar as atividades, por favor faça um fork do source utilizando o seguinte comando:
+Para completar as atividades, por favor faça um fork do source. Se precisar de ajuda, utilize [este tutorial](https://help.github.com/articles/fork-a-repo/) para fazê-lo ou contate-me via email.
 
-`git clone https://github.com/SEU-USUARIO-GIT/artigo-exemplo.git`
-
-Substituindo **SEU-USUARIO-GIT** pelo seu username no github.
-
-As duas branches disponíveis - **simples e clean** - são os dois modelos utilizados na avaliação dos tópicos do artigo.
+Após fazer o fork, você terá obtido projeto. Nele, as duas branches disponíveis - **simples e clean** - são os dois modelos utilizados na avaliação dos tópicos do artigo.
 
 * simples: Modelo 1
 * clean: Modelo 2

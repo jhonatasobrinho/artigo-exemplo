@@ -31,7 +31,7 @@ Há um bug na aplicação. Foi relatado que a aplicação está adicionando usu�
 
 Encontre e corrija este bug e informe no formulário quanto tempo levou para completar esta atividade.
 
-Se não conseguir completar a tarefa, informe **não consegui** no formulário.
+Se não conseguir completar a tarefa, informe **não consegui completar** no formulário.
 
 ---
 

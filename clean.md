@@ -31,7 +31,7 @@ Ao adicionar um contato, foi inserida uma nova funcionalidade neste modelo que i
 
 Encontre e corrija este bug e informe no formulário quanto tempo levou para completar esta atividade.
 
-Se não conseguir completar a tarefa, informe **não consegui** no formulário.
+Se não conseguir completar a tarefa, informe **não consegui completar** no formulário.
 
 ---
 

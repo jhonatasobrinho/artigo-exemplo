@@ -22,7 +22,7 @@ class Main extends Component {
     }
 
     render() {
-        const {contatos, onAdicionarContato, onRemoverContato} = this.props;
+        const {contatos, onAdicionarContato, onRemoverContato, onEditarContato} = this.props;
 
         return (
             <div className="container container-fluid" style={{maxWidth: '650px'}}>
@@ -86,6 +86,12 @@ class Main extends Component {
                                        style={{float: 'right', color: 'red', cursor: 'pointer', fontSize: '22px'}}
                                        className="fa fa-times fa-2x"
                                        aria-hidden="true"/>
+
+                                     <i onClick={() => onEditarContato(contato)}
+                                       style={{float: 'right', color: 'blue', cursor: 'pointer', fontSize: '22px'}}
+                                       className="fa fa-times fa-2x"
+                                       aria-hidden="true"/>
+                                       
 
                                 </li>
                             );

@@ -23,7 +23,7 @@ class App extends Component {
 
         const contato = {
             id: Math.max.apply(Math, this.state.contatos.map((c) => c.id)) + 1,
-            name: name.substr(0, name.length - 1),
+            name: name,
             [optValue]: e.target[optValue].value
         };
 
@@ -41,6 +41,11 @@ class App extends Component {
         this.setState({
             contatos: this.state.contatos.filter(contato => contato.id !== id)
         })
+    }
+
+    onEditarContato(contato, e){
+        console.log(contato);
+        this.preencherCampos(contato, e)
     }
 
     render() {
@@ -63,7 +68,8 @@ class App extends Component {
                 </nav>
                 <Main contatos={this.state.contatos}
                       onAdicionarContato={this.onAdicionarContato}
-                      onRemoverContato={this.onRemoverContato}/>
+                      onRemoverContato={this.onRemoverContato}
+                      onEditarContato={this.onEditarContato}/>
             </div>
         );
     }
@@ -72,6 +78,11 @@ class App extends Component {
         e.target[e.target.optradio.value].focus();
         e.target[e.target.optradio.value].value = '';
         e.target.nome.value = '';
+    }
+     preencherCampos(contato, e) {
+        e.target[e.target.optradio.value].focus();
+        e.target[e.target.optradio.value].value = contato.optValue;
+        e.target.nome.value = contato.name;
     }
 }
 

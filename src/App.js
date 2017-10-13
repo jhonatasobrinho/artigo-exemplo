@@ -23,7 +23,7 @@ class App extends Component {
 
         const contato = {
             id: Math.max.apply(Math, this.state.contatos.map((c) => c.id)) + 1,
-            name: name.substr(0, name.length - 1),
+            name: name,
             [optValue]: e.target[optValue].value
         };
 

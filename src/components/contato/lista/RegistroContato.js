@@ -5,7 +5,7 @@ import 'moment/locale/pt-br';
 
 const InsertDate = ({insertDate}) => {
     moment.locale('pt-BR');
-    const date = moment(insertDate).add(1, 'h').format('L LTS');
+    const date = moment(insertDate).add(0, 'h').format('L LTS');
 
     return (
         <span> - <i>Inserido em {date}</i></span>

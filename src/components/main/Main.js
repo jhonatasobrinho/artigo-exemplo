@@ -13,6 +13,7 @@ class Main extends Component {
 
         this.isPhoneSelected = this.isPhoneSelected.bind(this);
         this.onSelectOption = this.onSelectOption.bind(this);
+        this.clearFields = this.clearFields.bind(this);
     }
 
     isPhoneSelected() {
@@ -23,6 +24,13 @@ class Main extends Component {
         this.setState({selected: e.target.value});
     }
 
+    clearFields(e) {
+        console.log(e.target)
+        //e.target[e.target.optradio.value].focus();
+        //e.target[e.target.optradio.value].value = '';
+        //e.target.nome.value = '';
+    }  
+
     render() {
         const {contatos, onAdicionarContato, onRemoverContato} = this.props;
 
@@ -30,7 +38,8 @@ class Main extends Component {
             <div className="container container-fluid" style={{maxWidth: '650px'}}>
                 <FormularioContato onAdicionarContato={onAdicionarContato}
                                    onSelectOption={this.onSelectOption}
-                                   isPhoneSelected={this.isPhoneSelected}/>
+                                   isPhoneSelected={this.isPhoneSelected}
+                                   clearFields={this.clearFields}/>
                 <ListaContatos contatos={contatos} onRemoverContato={onRemoverContato}/>
             </div>
         )

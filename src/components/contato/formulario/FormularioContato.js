@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FormularioContato = ({onAdicionarContato, onSelectOption, isPhoneSelected}) => {
+const FormularioContato = ({onAdicionarContato, onSelectOption, isPhoneSelected, clearFields}) => {
     return (
         <form onSubmit={onAdicionarContato}>
             <div className="form-group">
@@ -47,6 +47,10 @@ const FormularioContato = ({onAdicionarContato, onSelectOption, isPhoneSelected}
                         <input className="form-control"
                                value="Submit"
                                type="submit"/>
+                    </div>
+                     <div className="col-md-3 col-sm-2">
+                        <input className="form-control"
+                               value="Clear" type="button" onClick={clearFields}/>
                     </div>
                 </div>
             </div>

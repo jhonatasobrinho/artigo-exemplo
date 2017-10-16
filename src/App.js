@@ -50,15 +50,14 @@ class App extends Component {
                 <Header />
                 <Main contatos={this.state.contatos}
                       onAdicionarContato={this.onAdicionarContato}
+                      limparCamposForm={this.limparCamposForm}
                       onRemoverContato={this.onRemoverContato}/>
             </div>
         );
     }
 
     limparCamposForm(e) {
-        e.target[e.target.optradio.value].focus();
-        e.target[e.target.optradio.value].value = '';
-        e.target.nome.value = '';
+        document.getElementById('form').reset()
     }
 }
 

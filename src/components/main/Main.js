@@ -20,9 +20,22 @@ class Main extends Component {
     selectOption(e) {
         this.setState({selected: e.target.value});
     }
-
+    
     render() {
-        const {contatos, onAdicionarContato, onRemoverContato} = this.props;
+        const { 
+            state,
+            setName,
+            setEmail,
+            onAdicionarContato,
+            onRemoverContato,
+            onEditHandle,
+            onChangeNameHandle,            
+        } = this.props;
+        
+        const { contatos, form } = state
+
+        const { email, name } = form
+
 
         return (
             <div className="container container-fluid" style={{maxWidth: '650px'}}>
@@ -53,6 +66,8 @@ class Main extends Component {
                                        name={this.isPhoneSelected() ? 'phone' : 'email'}
                                        placeholder={this.isPhoneSelected() ? 'Phone' : 'Email'}
                                        type={this.isPhoneSelected() ? 'text' : 'email'}
+                                       value={email}
+                                       onChange={setEmail}
                                        autofocus
                                        required
                                 />
@@ -64,6 +79,8 @@ class Main extends Component {
                             <div className="col-md-9 col-sm-10">
                                 <input className="form-control"
                                        name="nome"
+                                       value={name}
+                                       onChange={setName}
                                        placeholder="Contact name"
                                        type="text"/>
                             </div>
@@ -86,6 +103,11 @@ class Main extends Component {
                                        style={{float: 'right', color: 'red', cursor: 'pointer', fontSize: '22px'}}
                                        className="fa fa-times fa-2x"
                                        aria-hidden="true"/>
+
+                                    <i onClick={() => onEditHandle(id)}
+                                    style={{float: 'right', color: 'blue', cursor: 'pointer', fontSize: '22px'}}
+                                    className="fa fa-edit fa-2x"
+                                    aria-hidden="true"/>
 
                                 </li>
                             );

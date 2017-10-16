@@ -24,12 +24,13 @@ class Main extends Component {
     }
 
     render() {
-        const {contatos, onAdicionarContato, onRemoverContato} = this.props;
+        const {contatos, onAdicionarContato, onRemoverContato, limparCamposForm} = this.props;
 
         return (
             <div className="container container-fluid" style={{maxWidth: '650px'}}>
                 <FormularioContato onAdicionarContato={onAdicionarContato}
                                    onSelectOption={this.onSelectOption}
+                                   limparCamposForm={limparCamposForm}
                                    isPhoneSelected={this.isPhoneSelected}/>
                 <ListaContatos contatos={contatos} onRemoverContato={onRemoverContato}/>
             </div>
